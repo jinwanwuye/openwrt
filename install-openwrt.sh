@@ -16,7 +16,7 @@ Ker=$(uname -r)
 cp x-wrt-x86-64-generic-initramfs-kernel.bin /boot/vmlinuz-$Ker
 
 #复制x-wrt固件到根目录并改名
-cp x-wrt-x86-64-generic-ext4-combined.img.gz /x-wrt.img.gz
+cp openwrt-02.01.2024-x86-64-generic-squashfs-combined-efi.img.gz /x-wrt.img.gz
 
 #复制内核脚本到根目录并改名
 cp x-wrt-install-vps.sh /
