@@ -11,15 +11,15 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openclash
 ### opewrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
 
-### openwrt 访问不了解决办法
-### 在vnc界面输入 
-## 关闭防火墙
+## openwrt 访问不了解决办法
+## 在vnc界面输入 
+### 关闭防火墙
 /etc/init.d/firewall stop
-## 阻止防火墙开机启动
+### 阻止防火墙开机启动
 /etc/init.d/firewall disable
-## 编辑网卡
+### 编辑网卡
 nano /etc/config/network
-## 添加wan口，并把eth0绑定到wan口，把lan口绑定到eth1.
+### 添加wan口，并把eth0绑定到wan口，把lan口绑定到eth1.
 config interface 'loopback'  
         option device 'lo'  
         option proto 'static'  
@@ -45,8 +45,8 @@ config interface 'wan'
         option ifname 'eth0'  
         option proto 'dhcp'  
 
-## 然后按ctrl+x退出，输入
+### 然后按ctrl+x退出，输入
 /etc/init.d/network restart
-## 重启网卡生效
+### 重启网卡生效
 
 
