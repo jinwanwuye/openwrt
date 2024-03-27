@@ -5,6 +5,9 @@
 ### x-wrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
+### openclash安装
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openclash.sh && chmod 777 install-openclash.sh && ./install-openclash.sh
+
 ### opewrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
 
