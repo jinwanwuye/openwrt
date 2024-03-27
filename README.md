@@ -1,4 +1,4 @@
-# 版本v9.0-b202106290618
+# 版本v9.0-b202106191124
 ### EFI启动安装x-wrt
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
