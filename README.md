@@ -1,18 +1,22 @@
 # 版本v9.0-b202106191124
-### EFI启动安装x-wrt
+## EFI启动
+## 使用 fdisk -l 命令可以查看分区类型，以确定分区是否为 GPT。如果分区为 GPT，则需要刷写 EFI 固件。但通常情况下分区不是 GPT 类型。
+## 安装x-wrt
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
+## openwrt安装
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
+
+## opewrt-koolshare安装
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
+
+# 普通启动选这个
 ### x-wrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
-### openwrt安装
-wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
-
-### opewrt-koolshare安装
-wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
 
 
-## openwrt 访问不了解决办法
+# openwrt 访问不了解决办法
 ## 在vnc界面输入 
 ### 关闭防火墙
 /etc/init.d/firewall stop
