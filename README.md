@@ -4,6 +4,9 @@
 ## 安装x-wrt
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
+## 安装install-immortalwrt
+ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-immortalwrt.sh && chmod 777 install-immortalwrt.sh && ./install-immortalwrt.sh
+
 ## openwrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
 
