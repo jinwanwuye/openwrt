@@ -17,6 +17,13 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt-k
 ### x-wrt安装
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
+# ikuai安装到腾讯云
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
+
+# ikuai安装到本地服务器
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sh/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
+
+
 
 
 # openwrt 访问不了解决办法
