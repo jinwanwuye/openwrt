@@ -7,7 +7,7 @@ wget https://github.com/jinwanwuye/openwrt/raw/main/x-wrt-x86-64-generic-initram
 wget https://github.com/jinwanwuye/openwrt/raw/main/iKuai8_x32_3.7.11_Build202403051040.img.gz
 
 #下载内核执行脚本
-wget https://raw.githubusercontent.com/jinwanwuye/x-wrt/main/x-wrt-install-vps.sh
+wget https://raw.githubusercontent.com/jinwanwuye/x-wrt/main/sh/x-wrt-install-vps.sh
 
 #获取内核版本
 Ker=$(uname -r)
