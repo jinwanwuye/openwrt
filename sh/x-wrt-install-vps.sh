@@ -4,7 +4,7 @@
 BDEV=sda
 
 # x-wrt.img.gz in disk part sda2
-DDEV=sda2
+DDEV=sda3
 
 # static ip
 #network=172.21.170.245,255.255.240.0,172.21.175.253,8.8.8.8
