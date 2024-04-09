@@ -9,6 +9,11 @@ wget https://github.com/jinwanwuye/openwrt/raw/main/x-wrt-x86-64-generic-ext4-co
 #下载内核执行脚本
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda1/x-wrt-install-vps.sh
 
+
+#赋予读写权限
+chmod 777 x-wrt-install-vps.sh
+
+
 #获取内核版本
 Ker=$(uname -r)
 
