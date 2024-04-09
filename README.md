@@ -41,6 +41,11 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda3/install-ikua
 ### x-wrt安装到服务器sda3分区
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda3/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
+##确定磁盘的路径和分区类型
+使用 df 和 mount 命令可以查看 VPS 的磁盘信息，确定磁盘的第一个分区挂载路径，例如 /dev/sda1、/dev/vda1、/dev/xvda1 等等。需要注意的是，此分区的挂载路径以及可用空间大小，通常情况下此分区挂载在 / 或者 /boot 下，而我们在刷机过程中需要将固件等文件保存在此路径下。
+
+使用 fdisk -l 命令可以查看分区类型，以确定分区是否为 GPT。如果分区为 GPT，则需要刷写 EFI 固件。但通常情况下分区不是 GPT 类型。
+
 # openwrt 访问不了解决办法
 ## 在vnc界面输入 
 ### 关闭防火墙
