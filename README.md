@@ -1,4 +1,4 @@
-# 版本v22.10-b202303312336
+﻿# 版本v22.10-b202303312336
 ## EFI启动
 ## 使用 fdisk -l 命令可以查看分区类型，以确定分区是否为 GPT。如果分区为 GPT，则需要刷写 EFI 固件。但通常情况下分区不是 GPT 类型。
 ## 安装x-wrt
@@ -14,17 +14,32 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.s
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
 
 # 普通启动选这个
-### x-wrt安装
-wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
+### x-wrt安装到服务器vda1
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda1/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
-# ikuai安装到腾讯云
+### x-wrt安装到服务器vda2
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda2/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
+
+### ikuai安装到腾讯云vda1分区
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
 
-# ikuai安装到本地服务器
-wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sh/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
+### ikuai安装到服务器sda1分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda1/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
 
+### x-wrt安装到服务器sda1分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda1/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
+### ikuai安装到服务器sda2分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda2/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
 
+### x-wrt安装到服务器sda2分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda2/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
+
+### ikuai安装到服务器sda3分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda3/install-ikuai.sh && chmod 777 install-ikuai.sh && ./install-ikuai.sh
+
+### x-wrt安装到服务器sda3分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda3/install-x-wrt.sh && chmod 777 install-x-wrt.sh && ./install-x-wrt.sh
 
 # openwrt 访问不了解决办法
 ## 在vnc界面输入 
