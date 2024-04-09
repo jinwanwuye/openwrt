@@ -1,6 +1,5 @@
-﻿# 版本v22.10-b202303312336
-## EFI启动
-## 使用 fdisk -l 命令可以查看分区类型，以确定分区是否为 GPT。如果分区为 GPT，则需要刷写 EFI 固件。但通常情况下分区不是 GPT 类型。
+﻿# X-WRT版本 22.10_b202304222337
+
 ## 安装x-wrt
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
