@@ -1,8 +1,17 @@
 ﻿# X-WRT版本 22.10_b202304222337
 
 # EFI启动安装
+## 安装x-wrt到服务器的sda1分区
+ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda1/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
+
+## 安装x-wrt到服务器的sda2分区
+ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda2/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
+
+## 安装x-wrt到服务器的vda1分区
+ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda1/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
+
 ## 安装x-wrt到服务器的vda2分区
- wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
+ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda2/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
 ## 安装install-immortalwrt到服务器的vda2分区
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-immortalwrt.sh && chmod 777 install-immortalwrt.sh && ./install-immortalwrt.sh
