@@ -13,6 +13,12 @@
 ## 安装x-wrt到服务器的vda2分区
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/vda2/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
+## 安装opewrt-koolshare到服务器的sda1分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda1/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
+
+## 安装opewrt-koolshare到服务器的sda2分区
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/sda2/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
+
 ## 安装install-immortalwrt到服务器的vda2分区
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-immortalwrt.sh && chmod 777 install-immortalwrt.sh && ./install-immortalwrt.sh
 
