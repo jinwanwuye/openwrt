@@ -1,15 +1,16 @@
 ﻿# X-WRT版本 22.10_b202304222337
 
-## 安装x-wrt
+# EFI启动安装
+## 安装x-wrt到服务器的vda2分区
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-x-wrt-efi.sh && chmod 777 install-x-wrt-efi.sh && ./install-x-wrt-efi.sh
 
-## 安装install-immortalwrt
+## 安装install-immortalwrt到服务器的vda2分区
  wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-immortalwrt.sh && chmod 777 install-immortalwrt.sh && ./install-immortalwrt.sh
 
-## openwrt安装
+## 安装openwrt到服务器的vda2分区
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt.sh && chmod 777 install-openwrt.sh && ./install-openwrt.sh
 
-## opewrt-koolshare安装
+## 安装opewrt-koolshare到服务器的vda2分区
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-openwrt-koolshare.sh && chmod 777 install-openwrt-koolshare.sh && ./install-openwrt-koolshare.sh
 
 # 普通启动选这个
