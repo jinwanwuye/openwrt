@@ -1,4 +1,7 @@
-﻿# X-WRT版本 22.10_b202304222337
+# Ubuntu云服务器安装ikuai
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
+
+# X-WRT版本 22.10_b202304222337
 
 # EFI启动安装
 ## 安装x-wrt到服务器的sda1分区
