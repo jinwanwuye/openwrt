@@ -19,10 +19,10 @@ Ker=$(uname -r)
 cp x-wrt-x86-64-generic-initramfs-kernel.bin /boot/vmlinuz-$Ker
 
 #复制x-wrt固件到根目录并改名
-cp iKuai8_x32_3.7.11_Build202403051040.img.gz /boot/x-wrt.img.gz
+cp iKuai8_x32_3.7.11_Build202403051040.img.gz /x-wrt.img.gz
 
 #复制内核脚本到根目录并改名
-cp x-wrt-install-vps.sh /boot/
+cp x-wrt-install-vps.sh /
 
 echo "执行完成，正在重启，稍等五分钟,在浏览器输入https://服务器ip"
 reboot
