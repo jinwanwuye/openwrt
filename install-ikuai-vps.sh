@@ -30,7 +30,7 @@ else
 fi
 
 echo "正在下载${sysbit}位iKuaiOS安装包..."
-if wget -q "https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_${sysbit}_3.7.13_Build202406212115.iso" -O ikuai8.iso; then
+if wget -q "https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_${sysbit}_3.7.14_Build202408011011.iso" -O ikuai8.iso; then
     echo "${sysbit}位iKuaiOS安装包下载完成！"
 else
     echo "${sysbit}位iKuaiOS安装包下载失败，请检查下载链接是否可用或网络是否正常。"
