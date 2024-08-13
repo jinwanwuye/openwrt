@@ -1,6 +1,9 @@
 # Ubuntu云服务器安装ikuai
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
 
+# Linux云服务器安装ikuai
+curl -O https://raw.githubusercontent.com/jinwanwuye/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.14_Build202408011011.img.gz
+
 # X-WRT版本 22.10_b202304222337
 
 # EFI启动安装
