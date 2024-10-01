@@ -4,6 +4,17 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps
 # Linux云服务器安装ikuai
 curl -O https://raw.githubusercontent.com/jinwanwuye/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.14_Build202408011011.img.gz
 
+# Linux云服务器安装istoreos
+apt update && apt install -y wget
+## 下载immortalwrt到服务器并改名
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/immortalwrt-x86-64-generic-squashfs-combined-efi.img.gz -O op.img.gz
+## 下载openwrt-koolshare到服务器并改名
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/openwrt-koolshare-router-v3.2-r19470-2f7d60f0e5-x86-64-generic-squashfs-combined-efi.img.gz -O op.img.gz
+## 安装软路由到vps方式一：
+bash -c "$(wget -O- https://git.io/JZOn0)"
+## 安装软路由到vps方式二：
+wget --no-check-certificate -O- https://git.io/JZOn0|bash
+
 # X-WRT版本 22.10_b202304222337
 
 # EFI启动安装
