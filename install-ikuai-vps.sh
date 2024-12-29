@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 echo "正在查询IP地址、子网掩码、网关和DNS服务器..."
 echo "----------------------------------------------"
@@ -30,7 +30,7 @@ else
 fi
 
 echo "正在下载${sysbit}位iKuaiOS安装包..."
-if wget -q "https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_${sysbit}_3.7.16_Build202411141700.iso" -O ikuai8.iso; then
+if wget -q "https://raw.staticdn.net/jinwanwuye/openwrt/main/iKuai8_${sysbit}_3.7.16_Build202411141700.iso" -O ikuai8.iso; then
     echo "${sysbit}位iKuaiOS安装包下载完成！"
 else
     echo "${sysbit}位iKuaiOS安装包下载失败，请检查下载链接是否可用或网络是否正常。"
