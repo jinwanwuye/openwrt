@@ -2,7 +2,7 @@
 wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
 
 # Linux云服务器安装ikuai
-curl -O https://raw.githubusercontent.com/jinwanwuye/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.16_Build202411141700.img.gz
+curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.16_Build202411141700.img.gz
 
 # Linux云服务器安装istoreos
 apt update && apt install -y wget
