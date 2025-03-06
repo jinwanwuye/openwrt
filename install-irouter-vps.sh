@@ -24,7 +24,7 @@ echo "2. 高恪软路由"
 read -p "请输入选项（默认为2）:" option
 
 if [ "$option" == "1" ]; then
-    sysbit="https://www.dropbox.com/scl/fi/ya2pr9bcud8iew33yyxrc/MQ-iRouter_V24.10_Build20241031.iso"
+    sysbit="https://www.dropbox.com/scl/fi/ya2pr9bcud8iew33yyxrc/MQ-iRouter_V24.10_Build20241031.iso?dl=1"
 else
     sysbit="https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200-5.2.2.22633.iso"
 fi
