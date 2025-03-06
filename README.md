@@ -1,6 +1,9 @@
 # Ubuntu云服务器安装ikuai
 wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
 
+# Ubuntu云服务器安装高恪或iRouter软路由
+wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-irouter-vps.sh && chmod +x install-irouter-vps.sh && ./install-irouter-vps.sh
+
 # Linux云服务器安装ikuai
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.16_Build202411141700.img.gz
 
