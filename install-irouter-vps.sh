@@ -30,7 +30,7 @@ else
 fi
 
 echo "正在下载${sysbit}软路由安装包..."
-if curl -L "${sysbit}" -O ikuai8.iso; then
+if wget -q -O ikuai8.iso "${sysbit}"; then
     echo "${sysbit}软路由安装包下载完成！"
 else
     echo "${sysbit}软路由安装包下载失败，请检查下载链接是否可用或网络是否正常。"
