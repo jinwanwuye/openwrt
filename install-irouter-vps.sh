@@ -30,7 +30,7 @@ else
 fi
 
 echo "正在下载${sysbit}软路由安装包..."
-if wget "${sysbit}"; then
+if wget -q "${sysbit}"; then
     echo "${sysbit}软路由安装包下载完成！"
 else
     echo "${sysbit}软路由安装包下载失败，请检查下载链接是否可用或网络是否正常。"
