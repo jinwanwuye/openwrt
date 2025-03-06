@@ -24,13 +24,13 @@ echo "2. 高恪软路由"
 read -p "请输入选项（默认为2）:" option
 
 if [ "$option" == "1" ]; then
-    sysbit="-O ikuai8.iso "https://www.dropbox.com/scl/fi/ya2pr9bcud8iew33yyxrc/MQ-iRouter_V24.10_Build20241031.iso?dl=1""
+    sysbit="https://www.dropbox.com/scl/fi/ya2pr9bcud8iew33yyxrc/MQ-iRouter_V24.10_Build20241031.iso?dl=1"
 else
-    sysbit="-O ikuai8.iso "https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200-5.2.2.22633.iso""
+    sysbit="https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200-5.2.2.22633.iso"
 fi
 
 echo "正在下载${sysbit}软路由安装包..."
-if wget -q "${sysbit}"; then
+if wget -q -O ikuai8.iso "${sysbit}"; then
     echo "${sysbit}软路由安装包下载完成！"
 else
     echo "${sysbit}软路由安装包下载失败，请检查下载链接是否可用或网络是否正常。"
