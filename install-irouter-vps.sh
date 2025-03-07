@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su
+sudo i
 sudo apt-get update
 sudo apt -y install python3-pip
 pip install gdown
