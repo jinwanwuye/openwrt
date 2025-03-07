@@ -18,19 +18,24 @@ while true; do
     esac
 done
 
+sudo su
+apt-get update
+sudo apt -y install python3-pip
+pip install gdown
+
 echo "请选择您要安装的软路由系统："
 echo "1. iRouter软路由"
 echo "2. 高恪软路由"
 read -p "请输入选项（默认为2）:" option
 
 if [ "$option" == "1" ]; then
-    sysbit=""https://www.dropbox.com/scl/fi/ya2pr9bcud8iew33yyxrc/MQ-iRouter_V24.10_Build20241031.iso?dl=1""
+    sysbit="1hX5cB8kkOXZ6r_rLoEue1nolUR5OPUz4"
 else
-    sysbit="https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200-5.2.2.22633.iso"
+    sysbit="1PgTzzStnS2bwumrZK1tl3eb8UAXIuVdh"
 fi
 
 echo "正在下载${sysbit}软路由安装包..."
-if wget -q -O ikuai8.iso "${sysbit}"; then
+if gdown -O test.iso "${sysbit}"; then
     echo "${sysbit}软路由安装包下载完成！"
 else
     echo "${sysbit}软路由安装包下载失败，请检查下载链接是否可用或网络是否正常。"
@@ -38,7 +43,7 @@ else
 fi
 
 echo "正在挂载ISO镜像..."
-sudo mount -o loop ikuai8.iso /mnt
+sudo mount -o loop test.iso /mnt
 echo "ISO镜像挂载成功！"
 
 echo "正在复制ISO镜像启动文件..."
