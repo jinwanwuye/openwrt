@@ -1,4 +1,8 @@
 #!/bin/bash
+sudo su
+sudo apt-get update
+sudo apt -y install python3-pip
+pip install gdown
 
 echo "正在查询IP地址、子网掩码、网关和DNS服务器..."
 echo "----------------------------------------------"
@@ -17,11 +21,6 @@ while true; do
         * ) echo "请输入 y 或 n.";;
     esac
 done
-
-sudo su
-apt-get update
-sudo apt -y install python3-pip
-pip install gdown
 
 echo "请选择您要安装的软路由系统："
 echo "1. iRouter软路由"
