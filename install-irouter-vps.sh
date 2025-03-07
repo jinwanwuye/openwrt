@@ -1,8 +1,8 @@
 #!/bin/bash
-sudo i
+
 sudo apt-get update
 sudo apt -y install python3-pip
-pip install gdown
+sudo pip install gdown
 
 echo "正在查询IP地址、子网掩码、网关和DNS服务器..."
 echo "----------------------------------------------"
