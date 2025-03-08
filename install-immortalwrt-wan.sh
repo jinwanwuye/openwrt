@@ -13,7 +13,7 @@ gzip -d imm.img.gz
 AAA="lsblk -l|grep -i boot -B 10 |grep -i disk |awk '{print $1}'"
 
 #将固件dd到当前vps上的/dev/磁盘上
-dd if=imm.img of=/dev/${AAA} bs=4M status=progress oflag=sync
+sudo dd if=imm.img of=/dev/${AAA} bs=4M status=progress oflag=sync
 
 #强制系统重启
 echo b > /proc/sysrq-trigger
