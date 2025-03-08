@@ -16,4 +16,4 @@ AAA=$(lsblk -l|grep -i boot -B 10 |grep -i disk |awk '{print $1}')
 sudo dd if=imm.img of=/dev/${AAA} bs=4M status=progress oflag=sync
 
 #强制系统重启
-sudo reboot
+echo b > /proc/sysrq-trigger
