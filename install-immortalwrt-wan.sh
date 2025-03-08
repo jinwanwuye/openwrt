@@ -6,7 +6,7 @@ sudo i
 #下载ImmortalWrt wan口固件
 wget -O imm.img.gz "https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/immortalwrt-24.10.0-x86-64-generic-ext4-combined-efi-wan.img.gz"
 
-解压固件
+#解压固件
 gzip -d imm.img.gz
 
 #获取安装的盘符sda或者vda等等
