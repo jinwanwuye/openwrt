@@ -13,6 +13,10 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/instal
 # Ubuntu云服务器安装高恪gocloud软路由
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-gocloud.sh && chmod +x install-gocloud.sh && ./install-gocloud.sh
 
+# Ubuntu云服务器安装高恪gocloud软路由,EIFI
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-gocloud-efi.sh && chmod +x install-gocloud-efi.sh && ./install-gocloud-efi.sh
+
+
 # Ubuntu云服务器安装高恪或iRouter软路由
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-irouter-vps.sh && chmod +x install-irouter-vps.sh && ./install-irouter-vps.sh
 

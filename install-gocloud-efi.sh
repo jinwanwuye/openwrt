@@ -4,7 +4,7 @@
 sudo i
 
 #下载ImmortalWrt wan口固件
-wget -O imm.img.gz "https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200-5.2.2.22633.img.gz"
+wget -O imm.img.gz "https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/GOCLOUD-SX1200_UEFI-6.2.0.23190-uefi.img.gz"
 
 #解压固件
 gzip -d imm.img.gz
