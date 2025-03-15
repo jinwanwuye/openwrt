@@ -4,7 +4,7 @@ wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-ikuai-vps.sh && ch
 # Linux云服务器安装ikuai
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh dd --img https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.16_Build202411141700.img.gz
 
-# Ubuntu云服务器immortalwrt软路由,EIFI启动
+# Ubuntu云服务器immortalwrt软路由,EFI启动
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-immortalwrt-efi-wan.sh && chmod +x install-immortalwrt-efi-wan.sh && ./install-immortalwrt-efi-wan.sh
 
 # Ubuntu云服务器immortalwrt软路由,legacy启动
@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/instal
 # Ubuntu云服务器安装高恪gocloud软路由
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-gocloud.sh && chmod +x install-gocloud.sh && ./install-gocloud.sh
 
-# Ubuntu云服务器安装高恪gocloud软路由,EIFI
+# Ubuntu云服务器安装高恪gocloud软路由,EFI
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/refs/heads/main/install-gocloud-efi.sh && chmod +x install-gocloud-efi.sh && ./install-gocloud-efi.sh
 
 
