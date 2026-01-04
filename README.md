@@ -1,5 +1,8 @@
 # Ubuntu云服务器安装ikuai
-wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
+
+# Ubuntu云服务器安装ikuai
+wget https://raw.staticdn.net/jinwanwuye/openwrt/main/install-ikuai-vps1.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
 
 # Linux云服务器安装ikuai
 wget -qO- inst.sh|bash -s - -t https://raw.githubusercontent.com/jinwanwuye/openwrt/main/iKuai8_x64_3.7.16_Build202411141700.img.gz
