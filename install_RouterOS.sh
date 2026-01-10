@@ -295,7 +295,7 @@ create_autorun() {
         sleep 1
         MNT=/tmp/chr
         mkdir -p $MNT
-        PARTITION="p1"   # 直接挂载根分区
+        PARTITION="p1"
         if mount "${LOOP}${PARTITION}" "$MNT" 2>/dev/null; then
             confirm_address
             RANDOM_ADMIN_PASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16)
