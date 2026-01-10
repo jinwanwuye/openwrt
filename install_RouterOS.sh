@@ -302,7 +302,6 @@ create_autorun() {
             ask_until "$MSG_ADMIN_PASSWORD" "$RANDOM_ADMIN_PASS"
             RANDOM_ADMIN_PASS=$resp
             cat <<EOF > "$MNT/rw/autorun.scr"
-:delay 10
 /user set admin password="$RANDOM_ADMIN_PASS"
 /ip dns set servers=$DNS
 /ip address add address=$ADDRESS interface=ether1
@@ -312,21 +311,6 @@ create_autorun() {
 /ip service set [find name=telnet] disabled=yes
 /ip service set [find name=api] disabled=yes
 /ip service set [find name=api-ssl] disabled=yes
-/system scheduler add name=disable_services start-time=startup on-event="
-    /ip service set ftp disabled=yes
-    /ip service set ssh disabled=yes
-    /ip service set telnet disabled=yes
-    /ip service set api disabled=yes
-    /ip service set api-ssl disabled=yes
-    /system scheduler remove [find name=disable_services]
-    /system script remove [find name=disable_services_script]
-"
-/system script add name=disable_services_script source={
-    /ip service set ftp disabled=yes
-    /ip service set ssh disabled=yes
-    /ip service set telnet disabled=yes
-    /ip service set api disabled=yes
-    /ip service set api-ssl disabled=yes
 }
 EOF
             echo "$MSG_AUTO_RUN_FILE_CREATED"
