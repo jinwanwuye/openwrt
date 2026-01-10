@@ -295,13 +295,13 @@ create_autorun() {
         sleep 1
         MNT=/tmp/chr
         mkdir -p $MNT
-        PARTITION=$([ "$V7" == 1 ] && echo "p2" || echo "p1")
+        PARTITION="p1"   # 直接挂载根分区
         if mount "${LOOP}${PARTITION}" "$MNT" 2>/dev/null; then
             confirm_address
             RANDOM_ADMIN_PASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16)
             ask_until "$MSG_ADMIN_PASSWORD" "$RANDOM_ADMIN_PASS"
             RANDOM_ADMIN_PASS=$resp
-            cat <<EOF > "$MNT/rw/autorun.scr"
+            cat <<EOF > "$MNT/autorun.scr"
 /user set admin password="$RANDOM_ADMIN_PASS"
 /ip dns set servers=$DNS
 /ip address add address=$ADDRESS interface=ether1
@@ -311,7 +311,6 @@ create_autorun() {
 /ip service set [find name=telnet] disabled=yes
 /ip service set [find name=api] disabled=yes
 /ip service set [find name=api-ssl] disabled=yes
-}
 EOF
             echo "$MSG_AUTO_RUN_FILE_CREATED"
             umount $MNT
@@ -326,7 +325,6 @@ EOF
         echo "$MSG_AUTO_RUN_FILE_NOT_CREATED"
     fi
 }
-
 
 write_and_reboot() {
 	confirm_storge
