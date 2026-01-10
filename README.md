@@ -1,5 +1,5 @@
 # Ubuntu和Debian云服务器安装RouterOS
-wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-RouterOS.sh && chmod +x install-RouterOS.sh && ./install-RouterOS.sh
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install_RouterOS.sh && chmod +x install_RouterOS.sh && ./install_RouterOS.sh
 
 # Ubuntu云服务器安装ikuai
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
