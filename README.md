@@ -1,3 +1,4 @@
+wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-RouterOS.sh && chmod +x install-RouterOS.sh && ./install-RouterOS.sh
 # Ubuntu云服务器安装ikuai
 wget https://raw.githubusercontent.com/jinwanwuye/openwrt/main/install-ikuai-vps.sh && chmod +x install-ikuai-vps.sh && ./install-ikuai-vps.sh
 
