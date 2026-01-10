@@ -302,6 +302,7 @@ create_autorun() {
             ask_until "$MSG_ADMIN_PASSWORD" "$RANDOM_ADMIN_PASS"
             RANDOM_ADMIN_PASS=$resp
             cat <<EOF > "$MNT/rw/autorun.scr"
+:delay 10
 /user set admin password="$RANDOM_ADMIN_PASS"
 /ip dns set servers=$DNS
 /ip address add address=$ADDRESS interface=ether1
