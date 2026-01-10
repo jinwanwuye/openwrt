@@ -306,11 +306,26 @@ create_autorun() {
 /ip dns set servers=$DNS
 /ip address add address=$ADDRESS interface=ether1
 /ip route add gateway=$GATEWAY
-/ip service set ftp disabled=yes
 /ip service set ssh disabled=yes
+/ip service set ftp disabled=yes
 /ip service set telnet disabled=yes
 /ip service set api disabled=yes
 /ip service set api-ssl disabled=yes
+/system scheduler add name=disable_services on-event="\
+/ip service set ssh disabled=yes; \
+/ip service set ftp disabled=yes; \
+/ip service set telnet disabled=yes; \
+/ip service set api disabled=yes; \
+/ip service set api-ssl disabled=yes; \
+/system scheduler remove [find name=disable_services]; \
+/system script remove [find name=disable_services_script]" start-time=startup
+/system script add name=disable_services_script source={\
+/ip service set ssh disabled=yes; \
+/ip service set ftp disabled=yes; \
+/ip service set telnet disabled=yes; \
+/ip service set api disabled=yes; \
+/ip service set api-ssl disabled=yes; \
+}
 EOF
             echo "$MSG_AUTO_RUN_FILE_CREATED"
             umount $MNT
